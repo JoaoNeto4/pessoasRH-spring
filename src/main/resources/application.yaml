@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    #ACCES TO CONSOLE H2: http://localhost:8080/h2-console
+    #url: jdbc:h2:mem:mydb2
+    url: jdbc:h2:file:~/Downloads/data ## salvar os dados localmente em arquivo
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+    
+  #Evita problemas de exception com Swagger
+  #ACCES TO SWAGGER: http://localhost:8080/swagger-ui.html
+  mvc.pathmatch.matching-strategy: ant-path-matcher
+  
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+
+  jpa:
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: false #atrasa a inicialização ate carregar beans e configs.
+  flyway:
+    enabled: true
+    clean-disabled: false
+    schemas: PUBLIC
+    #baselineOnMigrate: true

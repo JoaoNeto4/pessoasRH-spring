@@ -1,0 +1,926 @@
+{
+	"info": {
+		"_postman_id": "ce437967-d17b-4864-a272-19c61b6289ca",
+		"name": "PostmanCollection_Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15404407"
+	},
+	"item": [
+		{
+			"name": "GET /pessoas/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pessoas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /pessoas/{id}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pessoas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 22:39:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"nome\": \"João Neto\",\n    \"dataNascimento\": \"2023-04-03\",\n    \"endereco\": [\n        {\n            \"id\": 1,\n            \"cidade\": \"Palmas\",\n            \"cep\": \"85555000\",\n            \"numero\": 507,\n            \"logradouro\": \"casa\"\n        },\n        {\n            \"id\": 2,\n            \"cidade\": \"Francisco Beltrão\",\n            \"cep\": \"85555444\",\n            \"numero\": 221,\n            \"logradouro\": \"ap\"\n        },\n        {\n            \"id\": 3,\n            \"cidade\": \"Tubarão\",\n            \"cep\": \"88541321\",\n            \"numero\": 21,\n            \"logradouro\": \"Candominio\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /pessoas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pessoas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /pessoas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pessoas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 00:24:47 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"nome\": \"Bhelquior\",\n            \"dataNascimento\": \"1994-10-03\",\n            \"endereco\": [\n                {\n                    \"id\": 4,\n                    \"cidade\": \"Mariopolis\",\n                    \"cep\": \"65666222\",\n                    \"numero\": 10,\n                    \"logradouro\": \"chacara\"\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"nome\": \"Baltazar\",\n            \"dataNascimento\": \"1980-09-20\",\n            \"endereco\": [\n                {\n                    \"id\": 5,\n                    \"cidade\": \"Coronel Domingos\",\n                    \"cep\": \"12456789\",\n                    \"numero\": 1021,\n                    \"logradouro\": \"comercio\"\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"nome\": \"Gaspar\",\n            \"dataNascimento\": \"1850-03-04\",\n            \"endereco\": [\n                {\n                    \"id\": 6,\n                    \"cidade\": \"Florianopolis\",\n                    \"cep\": \"1234456789\",\n                    \"numero\": 1080,\n                    \"logradouro\": \"casa\"\n                }\n            ]\n        },\n        {\n            \"id\": 5,\n            \"nome\": \"Francisco\",\n            \"dataNascimento\": \"1941-02-03\",\n            \"endereco\": [\n                {\n                    \"id\": 7,\n                    \"cidade\": \"Nonoai\",\n                    \"cep\": \"78999555\",\n                    \"numero\": 35,\n                    \"logradouro\": \"comercio\"\n                }\n            ]\n        },\n        {\n            \"id\": 6,\n            \"nome\": \"Maria Lucia\",\n            \"dataNascimento\": \"1989-01-03\",\n            \"endereco\": [\n                {\n                    \"id\": 8,\n                    \"cidade\": \"Palhoça\",\n                    \"cep\": \"45123123\",\n                    \"numero\": 987,\n                    \"logradouro\": \"casa\"\n                }\n            ]\n        },\n        {\n            \"id\": 7,\n            \"nome\": \"Jacinta Marto\",\n            \"dataNascimento\": \"2000-05-03\",\n            \"endereco\": [\n                {\n                    \"id\": 9,\n                    \"cidade\": \"São Paulo\",\n                    \"cep\": \"78456456\",\n                    \"numero\": 2081,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 10,\n                    \"cidade\": \"Foz do Iguaçu\",\n                    \"cep\": \"12458458\",\n                    \"numero\": 100,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 11,\n                    \"cidade\": \"Curitiba\",\n                    \"cep\": \"12456456\",\n                    \"numero\": 21,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 12,\n                    \"cidade\": \"Pinhão\",\n                    \"cep\": \"12452452\",\n                    \"numero\": 17,\n                    \"logradouro\": \"casa\"\n                }\n            ]\n        },\n        {\n            \"id\": 8,\n            \"nome\": \"Joarez Pinduca\",\n            \"dataNascimento\": \"1990-01-01\",\n            \"endereco\": []\n        },\n        {\n            \"id\": 9,\n            \"nome\": \"Joarez Pinduca\",\n            \"dataNascimento\": \"1990-01-01\",\n            \"endereco\": []\n        },\n        {\n            \"id\": 10,\n            \"nome\": \"Gregorio Magno\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": []\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageNumber\": 0,\n        \"pageSize\": 20,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 10,\n    \"last\": true,\n    \"size\": 20,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 10,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /pessoas/{id}/enderecos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pessoas/1/enderecos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"1",
+						"enderecos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /pessoas/{id}/enderecos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pessoas/1/enderecos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"1",
+								"enderecos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 22:45:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"cidade\": \"Palmas\",\n        \"cep\": \"85555000\",\n        \"numero\": 507,\n        \"logradouro\": \"casa\",\n        \"pessoa\": {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 2,\n        \"cidade\": \"Francisco Beltrão\",\n        \"cep\": \"85555444\",\n        \"numero\": 221,\n        \"logradouro\": \"ap\",\n        \"pessoa\": {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 3,\n        \"cidade\": \"Tubarão\",\n        \"cep\": \"88541321\",\n        \"numero\": 21,\n        \"logradouro\": \"Candominio\",\n        \"pessoa\": {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET PARAM /pessoas?nome=João",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pessoas?nome=João",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "João"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET PARAM /pessoas?nome=João",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pessoas?nome=João",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "João"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 22:53:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageNumber\": 0,\n        \"pageSize\": 20,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"last\": true,\n    \"size\": 20,\n    \"number\": 0,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 1,\n    \"empty\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "POST /pessoas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Joarez Pinduca\",\n    \"dataNascimento\": \"1990-01-01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pessoas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST /pessoas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Joarez Pinduca\",\n    \"dataNascimento\": \"1990-01-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pessoas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Location",
+							"value": "http://localhost:8080/pessoas/9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 00:18:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9,\n    \"nome\": \"Joarez Pinduca\",\n    \"dataNascimento\": \"1990-01-01\",\n    \"endereco\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "POST /pessoas    +   endereço",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Gregorio Magno\",\n    \"dataNascimento\": \"2023-04-03\",\n    \"endereco\": [{\n        \"cidade\": \"São Paulo\",\n        \"cep\": \"01234-567\",\n        \"numero\": 456,\n        \"logradouro\": \"Rua z\"\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pessoas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST /pessoas    +   endereço",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Gregorio Magno\",\n    \"dataNascimento\": \"2023-04-03\",\n    \"endereco\": [{\n        \"cidade\": \"São Paulo\",\n        \"cep\": \"01234-567\",\n        \"numero\": 456,\n        \"logradouro\": \"Rua z\"\n    }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pessoas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Location",
+							"value": "http://localhost:8080/pessoas/10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 00:21:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 10,\n    \"nome\": \"Gregorio Magno\",\n    \"dataNascimento\": \"2023-04-03\",\n    \"endereco\": [\n        {\n            \"id\": 13,\n            \"cidade\": \"São Paulo\",\n            \"cep\": \"01234-567\",\n            \"numero\": 456,\n            \"logradouro\": \"Rua z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT /pessoas/1/principal/2     -   atualiza endereço principal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/pessoas/1/principal/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"1",
+						"principal",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT /pessoas/1/principal/2     -   atualiza endereço principal",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/pessoas/1/principal/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"1",
+								"principal",
+								"2"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 01:03:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "GET /pessoas/1/enderecos    -    lista pessoas e enderecos- se for o caso mudar para findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pessoas/1/enderecos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"1",
+						"enderecos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /pessoas/1/enderecos    -    lista pessoas e enderecos- se for o caso mudar para findAll",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pessoas/1/enderecos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"1",
+								"enderecos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 01:04:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"cidade\": \"Palmas\",\n        \"cep\": \"85555000\",\n        \"numero\": 507,\n        \"logradouro\": \"casa\",\n        \"pessoa\": {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 2,\n        \"cidade\": \"Francisco Beltrão\",\n        \"cep\": \"85555444\",\n        \"numero\": 221,\n        \"logradouro\": \"ap\",\n        \"pessoa\": {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 3,\n        \"cidade\": \"Tubarão\",\n        \"cep\": \"88541321\",\n        \"numero\": 21,\n        \"logradouro\": \"Candominio\",\n        \"pessoa\": {\n            \"id\": 1,\n            \"nome\": \"João Neto\",\n            \"dataNascimento\": \"2023-04-03\",\n            \"endereco\": [\n                {\n                    \"id\": 1,\n                    \"cidade\": \"Palmas\",\n                    \"cep\": \"85555000\",\n                    \"numero\": 507,\n                    \"logradouro\": \"casa\"\n                },\n                {\n                    \"id\": 2,\n                    \"cidade\": \"Francisco Beltrão\",\n                    \"cep\": \"85555444\",\n                    \"numero\": 221,\n                    \"logradouro\": \"ap\"\n                },\n                {\n                    \"id\": 3,\n                    \"cidade\": \"Tubarão\",\n                    \"cep\": \"88541321\",\n                    \"numero\": 21,\n                    \"logradouro\": \"Candominio\"\n                }\n            ]\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "DELETE /pessoas/8",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pessoas/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE /pessoas/8",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pessoas/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"8"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 01:08:13 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "PUT /pessoas/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"João Neto\",\n    \"dataNascimento\": \"2013-04-03\",\n    \"endereco\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pessoas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT /pessoas/1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nome\": \"João Neto\",\n    \"dataNascimento\": \"2014-04-03\",\n    \"endereco\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pessoas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Apr 2023 14:33:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"nome\": \"João Neto\",\n    \"dataNascimento\": \"2014-04-03\",\n    \"endereco\": [\n        {\n            \"id\": 1,\n            \"cidade\": \"Palmas\",\n            \"cep\": \"85555000\",\n            \"numero\": 507,\n            \"logradouro\": \"casa\"\n        },\n        {\n            \"id\": 2,\n            \"cidade\": \"Francisco Beltrão\",\n            \"cep\": \"85555444\",\n            \"numero\": 221,\n            \"logradouro\": \"ap\"\n        },\n        {\n            \"id\": 3,\n            \"cidade\": \"Tubarão\",\n            \"cep\": \"88541321\",\n            \"numero\": 21,\n            \"logradouro\": \"Candominio\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "PUT /pessoas/1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"João Neto\",\n    \"dataNascimento\": \"2013-04-03\",\n    \"endereco\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pessoas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Apr 2023 00:33:59 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"nome\": \"João Neto\",\n    \"dataNascimento\": \"2013-04-03\",\n    \"endereco\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /pessoas/aniversariantes?data=2013-04-03",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pessoas/aniversariantes?data=2013-04-03",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"aniversariantes"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "2013-04-03"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /pessoas/aniversariantes?data=2013-04-03",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pessoas/aniversariantes?data=2013-04-03",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"aniversariantes"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "2013-04-03"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 01:43:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"nome\": \"João Neto\",\n        \"dataNascimento\": \"2013-04-03\",\n        \"endereco\": []\n    },\n    {\n        \"id\": 8,\n        \"nome\": \"Joarez Pinduca\",\n        \"dataNascimento\": \"2013-04-03\",\n        \"endereco\": []\n    },\n    {\n        \"id\": 9,\n        \"nome\": \"Joarez Pinduca\",\n        \"dataNascimento\": \"2013-04-03\",\n        \"endereco\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET /pessoas/2/endereco-principal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pessoas/2/endereco-principal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"2",
+						"endereco-principal"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /pessoas/2/endereco-principal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pessoas/2/endereco-principal",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pessoas",
+								"2",
+								"endereco-principal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Apr 2023 00:40:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"idPessoa\": 2,\n    \"nome\": \"Bhelquior\",\n    \"dataNascimento\": \"1994-10-03\",\n    \"endereco\": {\n        \"id\": 4,\n        \"cidade\": \"Mariopolis\",\n        \"cep\": \"65666222\",\n        \"numero\": 10,\n        \"logradouro\": \"chacara\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
