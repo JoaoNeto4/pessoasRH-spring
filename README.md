@@ -57,3 +57,4 @@ pass: password
 user: sa
 pass: password
 ```
+### You can still use the PessoaRH_Tests.postman_collection.json file by importing it into Postman and following the API tests.
